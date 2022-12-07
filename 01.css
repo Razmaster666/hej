@@ -2,7 +2,7 @@
 form {
     background-color: #e5f5f8;
     font-family: sans-serif;
-    width: 200px;
+    width: 300px;
     height: 100px;
     padding: 2em;
     margin-top: 3em;
@@ -38,7 +38,7 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #31936c;
-    transition-duration: 0.8s;
+    transition-duration: 0.2s;
     width: 185px;
     color: #e5f5f8;
 }
@@ -68,7 +68,9 @@ label:hover {
 }
 
 #button2,
-#button3 {
+#button3,
+#button4,
+#button5 {
     display: none;
 }
 

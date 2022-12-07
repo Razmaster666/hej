@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01.css">
+</head>
+
+<body class="center">
+    <form class="tab center">
+        <div>
+            <div id="question1">
+                <p id=form-prompt class="center">Favourite food?</p>
+                <input type="radio" id="pizza" name="choose" value="Joker">
+                <label for="pizza">Pizza!</label><br>
+                <input type="radio" id="hamburger" name="choose" value="Doom">
+                <label for="hamburger">Hamburger!</label><br>
+                <input type="radio" id="Kebab" name="choose" value="Magneto" onclick="">
+                <label for="Kebab">Kebab!</label><br>
+
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <button type="submit" id="button1" onclick="goToNextQ();hideButton(button1);showButton(button2)">Next</button>
+    </div>
+
+    <form class="tab">
+        <div>
+            <div id="question2">
+                <p id=form-prompt>Favorite vacation</p>
+
+                <input type="radio" id="beach" name="choose2" value="Magneto">
+                <label for="beach">beach!</label><br>
+                <input type="radio" id="mountain" name="choose2" value="Doom">
+                <label for="mountain">mountain!</label><br>
+                <input type="radio" id="sea" name="choose2" value="Joker">
+                <label for="sea">sea!</label><br>
+
+            </div>
+        </div>
+    </form>
+
+    <div><button type="submit" id="button2" onclick="goToNextQ();hideButton(button2);showButton(button3)">Next</button>
+    </div>
+
+
+    <form class="tab">
+        <div>
+            <div id="question3">
+
+                <p id=form-prompt>Best color?</p>
+                <input type="radio" id="blue" name="choose2" value="Doom">
+                <label for="blue">blue!</label><br>
+                <input type="radio" id="black" name="choose2" value="Joker">
+                <label for="black">black!</label><br>
+                <input type="radio" id="red" name="choose2" value="Magneto">
+                <label for="red">red!</label><br>
+
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <button type="Result" id="button3" onclick="goToNextQ(); result(); hideButton(button3)">Results!</button>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="tab center cool" id="finalResult">
+        Hello there
+    </div>
+
+    <script src="01.js"></script>
+</body>
+
+</html>

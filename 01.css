@@ -1,0 +1,97 @@
+
+form {
+    background-color: #e5f5f8;
+    font-family: sans-serif;
+    width: 200px;
+    height: 100px;
+    padding: 2em;
+    margin-top: 3em;
+    border-radius: 1em;
+}
+
+.cool{
+    background-color: #e5f5f8;
+    font-family: sans-serif;
+    width: 200px;
+    height: 100px;
+    padding: 2em;
+    margin-top: 3em;
+    border-radius: 1em;
+}
+
+#form-prompt {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #e5f5f8;
+    font-family: sans-serif;
+    padding: 1em 5em;
+    width: 200px;
+    margin-top: 3em;
+    border-style: hidden;
+    border-radius: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #31936c;
+    transition-duration: 0.8s;
+    width: 185px;
+    color: #e5f5f8;
+}
+
+input{
+    opacity: 2;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+
+label{
+    display: flexbox;
+    padding-left: 1em;
+}
+
+label:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    padding-left: 2em;
+}
+
+#button1 {
+    display: box
+}
+
+#button2,
+#button3 {
+    display: none;
+}
+
+.tab {
+    display: none;
+    border-style: hidden;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultsBaby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: 3em;
+}
+
+#finalResult {
+    display: none;
+    width: 500px;
+}

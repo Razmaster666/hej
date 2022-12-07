@@ -10,16 +10,19 @@
 </head>
 
 <body class="center">
+
     <form class="tab center">
         <div>
             <div id="question1">
-                <p id=form-prompt class="center">What academic field appeals to you??</p>
-                <input type="radio" id="pizza" name="choose" value="Joker">
-                <label for="pizza">Pizza!</label><br>
-                <input type="radio" id="hamburger" name="choose" value="Doom">
-                <label for="hamburger">Hamburger!</label><br>
-                <input type="radio" id="Kebab" name="choose" value="Magneto" onclick="">
-                <label for="Kebab">Kebab!</label><br>
+                <p id=form-prompt class="center">What academic field appels to you?</p>
+                <input type="radio" id="Science" name="choose" value="Doom">
+                <label for="Science">Science</label><br>
+                <input type="radio" id="Economics" name="choose" value="Hutt">
+                <label for="Economics">Economics</label><br>
+                <input type="radio" id="Psychology" name="choose" value="Quinn">
+                <label for="Psychology">Psychology</label><br>
+                <input type="radio" id="Chemistry" name="choose" value="Jaffar">
+                <label for="Chemistry">Chemistry</label><br>
             </div>
         </div>
     </form>
@@ -31,15 +34,15 @@
     <form class="tab">
         <div>
             <div id="question2">
-                <p id=form-prompt>Favorite vacation</p>
-
-                <input type="radio" id="beach" name="choose2" value="Magneto">
-                <label for="beach">beach!</label><br>
-                <input type="radio" id="mountain" name="choose2" value="Doom">
-                <label for="mountain">mountain!</label><br>
-                <input type="radio" id="sea" name="choose2" value="Joker">
-                <label for="sea">sea!</label><br>
-
+                <p id=form-prompt class = "center">Which pet suits you the best?</p>
+                <input type="radio" id="Bird" name="choose2" value="Jafar">
+                <label for="Bird">Bird</label><br>
+                <input type="radio" id="Rat" name="choose2" value="Hutt">
+                <label for="Rat">Rat</label><br>
+                <input type="radio" id="Hyena" name="choose2" value="Quinn">
+                <label for="Hyena">Hyena</label><br>
+                <input type="radio" id="Human" name="choose2" value="Doom">
+                <label for="Human">Human</label><br>
             </div>
         </div>
     </form>
@@ -52,20 +55,61 @@
         <div>
             <div id="question3">
 
-                <p id=form-prompt>Best color?</p>
-                <input type="radio" id="blue" name="choose2" value="Doom">
-                <label for="blue">blue!</label><br>
-                <input type="radio" id="black" name="choose2" value="Joker">
-                <label for="black">black!</label><br>
-                <input type="radio" id="red" name="choose2" value="Magneto">
-                <label for="red">red!</label><br>
+                <p id=form-prompt class="center">What's your favourite color?</p>
+                <input type="radio" id="Red" name="choose" value="Jafar">
+                <label for="Red">Red</label><br>
+                <input type="radio" id="Green" name="choose" value="Doom">
+                <label for="Green">Green</label><br>
+                <input type="radio" id="Gold" name="choose" value="Hutt">
+                <label for="Gold">Gold</label><br>
+                <input type="radio" id="Nofav" name="choose" value="Quinn">
+                <label for="Nofav">No favourite</label><br>
+
+            </div>
+        </div>
+    </form>
+    
+    <div><button type="submit" id="button3" onclick="goToNextQ();hideButton(button3);showButton(button4)">Next</button></div>
+    
+    <form class="tab">
+        <div>
+            <div id="question4">
+
+                <p id=form-prompt class="center">It's your day of what do you want to do?</p>
+                <input type="radio" id="Baseball" name="choose" value="Quinn">
+                <label for="Baseball">Play baseball </label><br>
+                <input type="radio" id="Antiques" name="choose" value="Jafar">
+                <label for="Antiques">Shop antiques</label><br>
+                <input type="radio" id="Book" name="choose" value="Doom">
+                <label for="Book">Read a good book</label><br>
+                <input type="radio" id="Home" name="choose" value="Hutt">
+                <label for="Home">Chill at home</label><br>
 
             </div>
         </div>
     </form>
 
+    <div><button type="submit" id="button4" onclick="goToNextQ();hideButton(button4);showButton(button5)">Next</button></div>
+
+    <form class="tab">
+        <div>
+            <div id="question5">
+               <p id=form-prompt>What's your favourite snack?</p>
+               <input type="radio" id="lollipop" name="choose" value="Quinn">
+                <label for="blue">Lollpiop</label><br>
+                <input type="radio" id="apple" name="choose" value="Jafar">
+                <label for="black">Apple</label><br>
+                <input type="radio" id="Pipe" name="choose" value="Hutt">
+                <label for="red">WaterPipe</label><br>
+                <input type="radio" id="meat" name="choose" value="Doom">
+                <label for="NoColor">Meat</label><br>
+           </div>
+        </div>
+    </form>
+
+
     <div>
-        <button type="Result" id="button3" onclick="goToNextQ(); result(); hideButton(button3)">Results!</button>
+        <button type="Result" id="button5" onclick="goToNextQ(); result(); hideButton(button5)">Results!</button>
     </div>
 
     <div>
@@ -73,8 +117,8 @@
     </div>
 
     <div class="tab center cool" id="finalResult">
-        <div id ="finalText"></div>
-        <img src="" alt="" id ="finalVillain">
+        <div id="finalText"></div>
+        <img src="" alt="" id="finalVillain">
     </div>
 
     <script src="01.js"></script>
